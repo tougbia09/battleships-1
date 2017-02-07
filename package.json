@@ -1,0 +1,10 @@
+{
+  "name": "battleships",
+  "version": "1.0.0",
+  "description": "Node.js Battleships",
+  "dependencies": {},
+  "server": {
+      "start": "node server.js"
+  },
+  "main": "server.js"
+}

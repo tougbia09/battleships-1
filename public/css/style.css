@@ -1,0 +1,108 @@
+body {
+    background-color: #222;
+    font-family: "arial";
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.field {
+    height: 484px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 484px;
+}
+
+.field tr td {
+    width: 484px;
+}
+
+.map {
+    position: relative;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: darkgreen;
+    height: 494px;
+    width: 494px;
+}
+
+.map canvas {
+    width: 484px;
+    height: 484px;
+}
+
+.map canvas:active {
+    cursor: default;
+}
+
+.button {
+    border: 2px solid black;
+    height: 60px;
+    width: calc(100% - 20px);
+    color: white;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #111;
+}
+
+.disable {
+    color: #555;
+    cursor: default;
+    border: 2px solid #333;
+}
+
+.disable:hover {
+    background-color: #222;
+}
+
+.menu {
+    padding: 0px;
+    margin: 0px;
+    width: 660px;
+    position: fixed;
+    height: 50px;
+    top: calc(100% - 110px);
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.menu td {
+    padding: 10px;
+    width: 220px;
+}
+
+.bullet {
+    position: absolute;
+    display: none;
+    top: 50px;
+    left: 50px;
+    height: 18px;
+    width: 18px;
+    border-radius: 9px;
+    border: 1px solid black;
+
+    animation:myfirst 0.5s;
+    -moz-animation:myfirst 0.5s infinite; /* Firefox */
+    -webkit-animation:myfirst 0.5s infinite; /* Safari and Chrome */
+
+    background: white;
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+    0%   {background:red;}
+    50%   {background:white;}
+    100%   {background:red;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+    0%   {background:red;}
+    50%   {background:white;}
+    100%   {background:red;}
+}

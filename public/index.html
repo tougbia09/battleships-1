@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Battleships</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <table class="field">
+        <tr>
+            <td>
+                <div class="map">
+                    <canvas id="map" width="484" height="484"></canvas>
+                    <div id="bullet_0" class="bullet"></div>
+                    <div id="bullet_1" class="bullet"></div>
+                    <div id="bullet_2" class="bullet"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table class="menu">
+        <tr>
+            <td>
+                <div id="btn_place" class="button disable">
+                    RANDOMIZE
+                </div>
+            </td>
+            <td>
+                <div id="btn_accept" class="button">
+                    CLICK TO START
+                </div>
+            </td>
+            <td>
+                <div id="btn_rotate" class="button disable">
+                    ROTATE SELECTED
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="http://172.20.10.3:3000/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="js/jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
